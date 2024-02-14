@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>CRUD Uygulaması</h1>
+    <br>
+
+    <form>
+        <button type="submit" onclick="temizle()">Temizle</button>
+    </form>
+
+    <form>
+        <div>
+            <div class="title">Kullanıcı Adı</div>
+            <input type="text" name="username" id="username" required>
+        </div>
+        <div>
+            <div class="title">E-Posta Adresi</div>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <br>
+        <button onclick="addUser()" type="submit">Ekle</button>
+    </form>
+    <br>
+    <div>
+        <ul id="userList">
+
+        </ul>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
